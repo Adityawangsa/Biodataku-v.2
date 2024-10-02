@@ -57,11 +57,15 @@ nav ul li:hover {
   padding: 35px 6% 0;
   align-items: center;
 }
+.title-home {
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
 .home-text h1 {
-  font-size: 3em;
+  font-size: 3rem;
 }
 .home-text h2 {
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 .home-text p {
   text-align: justify;
@@ -69,15 +73,56 @@ nav ul li:hover {
 }
 .home-img {
   display: flex;
-  justify-content: center;
+  justify-content: end;
+  padding-right: 12%;
 }
 .home-img img {
   width: 100%;
   max-width: 320px;
   height: auto;
 }
-@media (max-width: 767px) {
+/* Set a tablet size */
+@media (max-width: 991px) {
   nav ul {
     display: none;
+  }
+  /* Set a home section */
+  .home {
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 16% 10% 0;
+  }
+  .home-text h1 {
+    font-size: 3rem;
+  }
+  .home-text h2 {
+    font-size: 2rem;
+  }
+  .home-text p {
+    text-align: justify;
+    font-size: 1em;
+  }
+  .home-img {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+}
+/* Set a medium mobile size */
+@media (max-width: 767px) {
+  .home {
+    gap: 1em;
+    height: 100%;
+    min-height: 90vh;
+    padding: 28% 10% 10%;
+  }
+  .home-text h1 {
+    font-size: 7vw;
+  }
+  .home-text h2 {
+    font-size: 4vw;
+  }
+  .home-img img {
+    max-width: 72vw;
   }
 }
