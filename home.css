@@ -71,6 +71,21 @@ nav ul li:hover {
   text-align: justify;
   font-size: 1em;
 }
+.btn-home {
+  margin-top: 20px;
+}
+.btn-home a {
+  padding: 6px 22px;
+  background-color: rgb(254, 92, 92);
+  transition: all 0.2s ease;
+  border-radius: 6px;
+}
+.btn-home a:hover {
+  background-color: rgb(255, 63, 63);
+}
+.btn-talk {
+  margin-left: 16px;
+}
 .home-img {
   display: flex;
   justify-content: end;
