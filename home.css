@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+}
+body {
+  background-color: #5f6f65;
+  transition: background-color 0.3s ease;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #808d7c;
+  position: fixed;
+  padding: 2% 6%;
+  transition: background-color 0.3s ease;
+}
+header > a.logos {
+  font-size: 2em;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+nav ul li {
+  margin: 0 15px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+nav ul li:hover {
+  border-bottom: 2px solid white;
+}
+#dark-mode {
+  display: flex;
+  align-items: center;
+}
+.button-dom {
+  width: 100%;
+  max-width: 40px;
+  height: auto;
+}
+/* Set a home section */
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2%;
+  width: 100%;
+  height: 100vh;
+  padding: 35px 6% 0;
+  align-items: center;
+}
+.home-text h1 {
+  font-size: 3em;
+}
+.home-text h2 {
+  font-size: 1.5em;
+}
+.home-text p {
+  text-align: justify;
+  font-size: 1em;
+}
+.home-img {
+  display: flex;
+  justify-content: center;
+}
+.home-img img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+}
+@media (max-width: 767px) {
+  nav ul {
+    display: none;
+  }
+}
